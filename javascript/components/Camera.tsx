@@ -210,6 +210,8 @@ const Camera = memo(
       }: CameraProps,
       ref,
     ) => {
+      console.log('[maplibre-react-native] Camera render');
+
       const props = useMemo(() => {
         return {
           allowUpdates,

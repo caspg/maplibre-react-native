@@ -408,6 +408,8 @@ const MapView = memo(
         }),
       );
 
+      console.log('[maplibre-react-native] Camera render');
+
       const {_runNativeCommand, _runPendingNativeCommands, _onAndroidCallback} =
         useNativeBridge(NATIVE_MODULE_NAME);
       const logger = useRef<Logger>(Logger.sharedInstance());
